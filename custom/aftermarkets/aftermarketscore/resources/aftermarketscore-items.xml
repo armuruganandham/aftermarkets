@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2017 SAP SE or an SAP affiliate company.  All rights reserved.
+
+ This software is the confidential and proprietary information of SAP
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with SAP.
+-->
+
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+    <collectiontypes>
+		<collectiontype code="componentList" elementtype="java.lang.String" autocreate="true" generate="true" type="list"/>
+		
+    </collectiontypes>
+
+    <enumtypes>
+    </enumtypes>
+
+    <itemtypes>
+
+        <!-- Add your item definitions here -->
+
+
+        <!-- TypeGroups are for structure of this file only -->
+		<itemtype code="Product" autocreate="false" generate="false">
+			<description>Base product</description>	
+				<attributes>
+					<attribute qualifier="productID" type="java.lang.String">
+						<description>short unique ID of product</description>
+						<persistence type="property" />
+					</attribute>
+				</attributes>
+		</itemtype>
+		
+		<itemtype code="ProductAttributes" autocreate="true" generate="true">
+			<description>Holds the list of product attributes</>
+			<attributes>
+				<attribute qualifier="attributeID" type="java.lang.String">
+					<description>short unique ID of attribute</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="name" type="java.lang.String">
+					<description>name of attribute</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="productID" type="java.lang.String">
+					<description>Product code of the prodict this attribute is for</description>
+					<persistence type="property" />
+				</attribute>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="Components" autocreate="true" generate="true">
+			<description>Components that will be sold with each piece of equipment</>
+			<attributes>
+				<attribute qualifier="equipmentSerialNumber" type="java.lang.String">
+					<description>Serial number of the equipment this component belongs to</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="componentID" type="java.lang.String">
+					<description>ID of component</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="product" type="Product">
+					<description>The product that this component is</description>
+					<persistence type="property" />
+				</attribute>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="EquipmentBase" autocreate="true" generate="true">
+			<description>The base equipment model</>
+			<attributes>
+				<attribute qualifier="code" type="java.lang.String">
+					<description>Unique code the represents the equipment model</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="name" type="java.lang.String">
+					<description>Name of the equipment model</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="componentList" type="componentList">
+					<description>List of components in this equipment model</description>
+					<persistence type="property" />
+				</attribute>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="EquipmentAttributeValues" autocreate="true" generate="true">
+			<description>Holds the list of product attributes</>
+			<attributes>
+				<attribute qualifier="equipmentSerialNumber" type="java.lang.Integer">
+					<description>Serial number for the equipment this attribute is for</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="value" type="java.lang.String">
+					<description>The value of this attriute</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="productAttributeID" type="java.lang.String">
+					<description>Product Attribute ID of the product this attribute is for</description>
+					<persistence type="property" />
+				</attribute>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="Equipment" autocreate="true" generate="true">
+			<description>The base equipment model</>
+			<attributes>
+				<attribute qualifier="serialNumber" type="java.lang.String">
+					<description>Unique serial number for this equipment</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="equipmentBase" type="EquipmentBase">
+					<description>The equipment code for the model this equipment is</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="soldDate" type="java.lang.String">
+					<description>Date this equipment was sold</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute qualifier="serviceHistory" type="java.lang.String">
+					<description>Service history</description>
+					<persistence type="property" />
+				</attribute>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		
+    </itemtypes>
+</items>

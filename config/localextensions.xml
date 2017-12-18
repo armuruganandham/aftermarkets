@@ -1,0 +1,73 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+    <extension name='mcc' />
+    <extension name='adaptivesearchsolr' />
+    <extension name='adaptivesearchbackoffice' />
+    <extension name='adaptivesearchsamplesaddon' />
+    <extension name='commerceservicesbackoffice' />
+    <extension name='solrfacetsearchbackoffice' />
+    <extension name='solrserver' />
+    <extension name='acceleratorwebservicesaddon' />
+    <extension name='orderselfserviceaddon' />
+    <extension name='customerticketingaddon' />
+    <extension name='commerceorgsamplesaddon' />
+    <extension name='rulebuilderbackoffice' />
+    <extension name='couponfacades' />
+    <extension name='cmswebservices' />
+    <extension name='smarteditwebservices' />
+    <extension name='cmssmarteditwebservices' />
+    <extension name='permissionswebservices' />
+    <extension name='smarteditaddon' />
+    <extension name='cmssmartedit' />
+    <extension name='cmsbackoffice' />
+    <extension name='cmsmulticountrycockpit' />
+    <extension name='multicountrysampledataaddon' />
+    <extension name='previewpersonalizationweb' />
+    <extension name='textfieldconfiguratortemplatebackoffice' />
+    <extension name='textfieldconfiguratortemplateaddon' />
+    <!-- 
+	<extension name='promotionenginesamplesaddon' />
+	<extension name='couponbackoffice' /> 
+    <extension name='droolsruleengineservices' />
+	<extension name='customersupportbackoffice' />
+	<extension name='yacceleratorcockpits' />
+    <extension name='yacceleratorinitialdata' />
+    <extension name='yacceleratorfulfilmentprocess' />
+    <extension name='yacceleratorstorefront' />
+    <extension name='ycommercewebservices' />
+    <extension name='ycommercewebservicestest' /> 
+    <extension name='electronicsstore' />
+    <extension name='apparelstore' />
+	<extension name='personalizationcmsweb' />
+    <extension name='personalizationsmartedit' />
+    <extension name='personalizationsampledataaddon' />
+    <extension name='personalizationpromotions' />
+    <extension name='personalizationpromotionsweb' />
+    <extension name='personalizationservicesbackoffice' />
+    <extension name='personalizationpromotionsbackoffice' />
+    <extension name='personalizationcmsbackoffice' /> 
+    <extension name='assistedservicestorefront' />
+    <extension name='assistedservicewebservices' />
+    <extension name='assistedservicepromotionaddon' />
+    <extension name='assistedserviceatddtests' />
+    <extension name='promotionengineatddtests' /> 
+    <extension name='textfieldconfiguratortemplateatddtests' />
+    <extension name='pcmbackofficesamplesaddon' /> 
+	-->
+	<!-- Manually addded extensions> -->
+	<extension name='powertoolsstore' />
+	<extension name='b2bcommercebackoffice' />
+	<extension name='b2badmincockpit' />
+	<extension name='b2bacceleratoraddon' />
+	<extension name='commerceorgaddon' />
+	<extension name='aftermarketsfulfilmentprocess' />
+	<extension name='aftermarketscore' />
+	<extension name='aftermarketscockpits' />
+	<extension name='aftermarketsfacades' />
+	<extension name='aftermarketstest' />
+	<extension name='aftermarketsstorefront' />
+	<extension name='aftermarketsinitialdata' />
+	
+  </extensions>
+</hybrisconfig>
